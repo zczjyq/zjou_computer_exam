@@ -1,22 +1,15 @@
 #include <iostream>
 #include <algorithm>
 #include <set>
-
 using namespace std;
-
 int n, p[10010], st_num[10010], cnt, num, f, m, k, u;
-struct node {
-    int num_ho, num_area;
-} nodes[10010];
+struct node {int num_ho, num_area; } nodes[10010];
 struct ans {
     int min_num = 100000, num_people, num_area, num_ho;
     double avg_ho, avg_area;
 } res[10010];
 set<int> s;
-int find(int u) {
-    if (p[u] != u) p[u] = find(p[u]);
-    return p[u];
-}
+int find(int u) { return p[u] == u ? u : p[u] = find(p[u]);}
 int main() {
     cin >> n;
     for (int i = 1; i < 10010; i ++ ) p[i] = i;
