@@ -71,7 +71,7 @@ values
 insert into 
     softstu(sno, sname)
 select 
-    no, sname 
+    sno, sname 
 from 
     stu 
 where 
