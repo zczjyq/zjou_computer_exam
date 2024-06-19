@@ -1,0 +1,338 @@
+/*钟表题*/
+.dh_con {
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.dh_con p {
+    margin-bottom: 16px;
+    color: #131B26;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.dh_con p span.dh_check {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin: -2px 10px 0 0;
+    background: url(../../mooc2/images/task_check.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.dh_con p span.dh_checked {
+    background: url(../../mooc2/images/task_checked.png) no-repeat;
+    background-size: 100%;
+}
+
+.clockCon .wid70_sp {
+    line-height: 34px;
+    color: #474C59
+}
+
+.clockCon .selectBox {
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    color: #606266;
+    margin-right: 10px
+}
+
+.clockCon .selectBox p {
+    font-size: 14px;
+    height: 32px;
+    color: #606266
+}
+
+.clockCon .selectBox ul {
+    top: 39px;
+    max-height: 250px;
+}
+
+.clockCon .fenhao {
+    display: inline-block;
+    line-height: 34px;
+    margin-right: 10px;
+    color: #474C59;
+    font-size: 20px;
+}
+
+.clockCon .blue-border:hover {
+    border: 1px solid #3b8cff;
+}
+
+.answer-div {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.answer-div label {
+    color: #131B26;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.answer-div .list {
+    margin-left: 2px;
+}
+
+.answer-div .list p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #131B26;
+}
+
+/*钟表题*/
+.clock-question {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+.clock-question .clock-item {
+    margin-right: 80px;
+    display: inline-block;
+    vertical-align: top;
+    width: calc((100% - 80px*2)/3);
+}
+
+.clock-question .clock-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.clock-question .clock-item:last-child {
+    margin-right: 0;
+}
+
+.clock-question .clock-item:nth-child(n+4) {
+    margin-top: 60px;
+}
+
+.clock-question .clock-item .clock-cont {
+    position: relative;
+    margin: 0 auto;
+    width: 230px;
+    height: 230px;
+    background: url(../../mooc2/images/clock.png) no-repeat;
+    background-size: contain;
+}
+
+.clock-question .clock-item .clock-cont .hour-line {
+    position: absolute;
+    left: 112px;
+    top: 71px;
+    width: 6px;
+    height: 88px;
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.clock-question .clock-item .clock-cont .hour-line .h-line {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 44px;
+    border-radius: 3px;
+    background: #FABE3D;
+}
+
+.clock-question .clock-item .clock-cont .minute-line {
+    position: absolute;
+    left: 112px;
+    top: 47px;
+    width: 6px;
+    height: 136px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.clock-question .clock-item .clock-cont .minute-line .m-line {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 68px;
+    border-radius: 3px;
+    background: #7EDB41;
+}
+
+.clock-question .clock-item .clock-cont .circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background: #FFD477;
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.clock-question .clock-item .clock-day {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: #3A8BFF;
+}
+
+.clock-select-box {
+    margin-top: 12px;
+}
+
+.clock-select-box .select-item {
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.clock-select-box .select-item:last-child {
+    margin-right: 0;
+}
+
+.clock-select-box .select-item .select-time {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 13px;
+    width: 80px;
+    height: 34px;
+    border: 1px solid #D4D6D9;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clock-select-box .select-item .select-time .time-t {
+    z-index: 2;
+    width: 34px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ACB4BF;
+}
+
+.clock-select-box .select-item .select-arrow {
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: top;
+    width: 10px;
+    height: 10px;
+    background: url("../../mooc2/images/downarrow.png") no-repeat center center;
+    background-size: contain;
+}
+
+.clock-select-box .select-item .select-arrow.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.clock-select-box .select-item .select-down-list {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    padding: 6px 0;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 2px 12px rgba(175, 187, 204, 0.75);
+    box-shadow: 0px 2px 12px rgba(175, 187, 204, 0.75);
+    border-radius: 6px;
+    width: 80px;
+    max-height: 172px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.clock-select-box .select-item .select-down-list.show {
+    display: block;
+}
+
+.clock-select-box .select-item .select-down-list .sd-item {
+    cursor: pointer;
+    padding-left: 12px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 12px;
+    color: #131B26;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clock-select-box .select-item .select-down-list .sd-item.active {
+    background: #F0F6FF;
+}
+
+.clock-select-box .select-item .select-down-list .sd-item:hover {
+    background: #F0F6FF;
+}
+
+.clock-select-box .select-item .select-down-list .sd-item:last-child {
+    margin-bottom: 0;
+}
+
+.clock-select-box .dot {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #474C59;
+}
+
+.clock-question .clock-item .turn-time {
+    margin-top: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.clock-question .clock-item .turn-time .day {
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #3A8BFF;
+}
+
+.clock-question .clock-item .turn-time .time {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #262F90;
+}

@@ -1,0 +1,53 @@
+.border_div{width: 200px;height: 70px;background: #FFFFFF;border: 1px solid #E1EAF4;border-radius: 4px;text-align:center;line-height:70px;color: #6B89B3;font-size:16px;}
+.sound_div{cursor:pointer}
+.sound_div i{display:inline-block;width:18px;height:18px;vertical-align:middle;margin-right:6px;background:url(../../images/sound_icon.png) no-repeat;background-size:100% 100%;margin-top:-2px;}
+.sound_div:hover{border:1px solid #3A8BFF;color:#3A8BFF}
+.sound_div:hover i{background:url(../../images/sound_icon_hover.png) no-repeat;background-size:100% 100%;}
+.upload_div i{display:inline-block;width:18px;height:18px;vertical-align:middle;margin-right:6px;margin-top:-2px;}
+.upload_div i img{display:block;width:100%;height:100%;}
+.sound_div_teacher{cursor:pointer}
+.up_sound_icon{display:inline-block;width:18px;height:18px;vertical-align:middle;margin-right:6px;background:url(../../images/s_addIcon.png) no-repeat;background-size:100% 100%;margin-top:-2px;}
+.sound_div_teacher:hover{border:1px solid #3A8BFF;color:#3A8BFF}
+.sound_div_teacher:hover .up_sound_icon{background:url(../../images/s_addIcon_blue.png) no-repeat;background-size:100% 100%;}
+
+.fontWeight{ font-weight:600;}
+
+.redColor{color: #F33131;}
+.h3_result{font-weight:600;margin-bottom:10px;}
+.sp_result_div{overflow:hidden;margin-bottom:16px;}
+.sp_result_div dl{    display: table;}
+.sp_result_div dl dt{float:left;display:block;width:50px;height:50px;border-radius:50%;border: 1px solid #D4D6D9;text-align:center;font-size:10px;margin-right:12px;}
+.sp_result_div dl dt span{padding-top:5px;display:block;width:100%;font-family:'din';font-size:18px;line-height:20px;}
+.sp_result_div dl dt b{    transform: scale(0.9);    display: inline-block;}
+.sp_result_div dl dd{line-height:24px;font-size:14px;    display: table-cell;    vertical-align: middle;}
+.grayColor{color: #8A8B99;}
+.sp_result_div dl dt.greenBorder{border: 1px solid rgba(0, 184, 110, 0.3);}
+.sp_result_div dl dt.redBorder{border: 1px solid rgba(243, 49, 49, 0.3);}
+.textresult{font-size:14px;line-height:22px;margin-bottom:16px;}
+.marBom10{margin-bottom:10px}
+.matchAudio,.recordAudio{margin-top: 15px}
+
+.editorhide .edui-default{
+    display: none;
+}
+
+.EQUAL{ color:#00B86E;line-height: inherit!important;}
+.INSERT{ color:#F33F34;line-height: inherit!important;}
+.readDiv{padding: 15px 35px 0;}
+.btnBlue{border: 1px solid #94C1FF;border-radius: 20px;display:inline-block;width:90px;height:34px;text-align:center;line-height:34px;color: #3A8BFF;}
+.btnBlue:hover{background: #EAF0FF;}
+.btnBlue:active{background: #E4ECFF;}
+.btn_92_cancel:hover{background:none}
+.btn_92_cancel:active{background:none}
+.btn_104{width:102px;}
+.btn_92{width:90px;}
+.lostword{word-wrap:break-word;	word-break:break-all;}
+.color1{word-wrap:break-word;	word-break:break-all;}
+
+.mark_judge_con{ width:72px; background:#FFFFFF; border-radius:6px; position:absolute; top:32px; left:50%; margin-left:-36px; z-index:9; -webkit-box-shadow:0px 2px 12px 0px rgba(175,187,204,0.75); box-shadow:0px 2px 12px 0px rgba(175,187,204,0.75);}
+.mark_judge_con ul{ padding:6px 0;}
+.mark_judge_con li{ padding:4px 0; height:32px; line-height:32px; font-size:32px; text-align:center; cursor:pointer;}
+.mark_judge_con li:hover{ background:#F7FAFC;}
+.mark_fill+.mark_fill{ margin-top:16px;}
+.mark_fill dd,.mark_matching dd,.mark_fill_matching dd,.mark_sort dd+dd,.program+.program{ margin-top:6px;}
+.mark_fill{ zoom:1; overflow:hidden;width:650px}
