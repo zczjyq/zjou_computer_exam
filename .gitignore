@@ -3,3 +3,5 @@
 
 # 不忽略 .gitignore 文件本身
 !.gitignore
+
+.exe
