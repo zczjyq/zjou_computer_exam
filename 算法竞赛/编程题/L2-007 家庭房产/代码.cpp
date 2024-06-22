@@ -56,3 +56,6 @@ int main() {
     cout << cnt << endl;
     for (int i = 0; i < cnt; i ++ ) printf("%04d %d %.3lf %.3lf\n", res[i].min_num, res[i].num_people, res[i].avg_ho, res[i].avg_area);
 }
+
+
+for (int i = 0; i < n; i ++ )

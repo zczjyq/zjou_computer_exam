@@ -1,17 +1,19 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner cin = new Scanner(System.in);
-        while (cin.hasNext()) {
-            String a = cin.nextLine();
-            int res = 0;
-            for (int i = 0; i < a.length(); i ++ ) {
-                if (a.charAt(i) >= '0' && a.charAt(i) <= '9')
-                    res += a.charAt(i) - '0';
-            }
-            System.out.println(res);
-        }
+	public static void main(String[] args) {
+		Scanner cin = new Scanner(System.in);
+		while (cin.hasNext()) {
+			String num = cin.next();
+			int res = 0;
+			for (int i = 0; i < num.length(); i ++ ) {
+				int nums = num.charAt(i) - '0';
+				if (nums >= 0 && nums <= 9) {
+					res += nums;
+				}
+			}
+			System.out.println(res);
+		}
         cin.close();
-    }
+	}
 }
