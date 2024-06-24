@@ -1,0 +1,48 @@
+window.CKEDITOR_BASEPATH = 'https://www.zjooc.cn/dist/static/lib/js/ckeditor/';
+
+CKEDITOR.editorConfig = function( config ) {
+
+	config.toolbarGroups = [
+		{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
+		// { name: 'editing',     groups: [ 'find', 'selection', 'spellchecker' ] },
+		{ name: 'links' },
+		{ name: 'insert' },
+		{ name: 'forms' },
+		{ name: 'tools' },
+		// { name: 'document',	   groups: [ 'mode', 'document', 'doctools' ] },
+		{ name: 'others' },
+		'/',
+		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+		{ name: 'colors' },
+		{ name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
+		{ name: 'styles'}
+
+	];
+
+
+    config.extraPlugins = 'cklatex';
+
+    config.removeButtons = 'Styles';
+
+    config.format_tags = 'p;h1;h2;h3;pre';
+
+    config.image_previewText = '';
+    config.removeDialogTabs = 'image:advanced;image:Link;link:advanced';
+
+    config.latexUrl = "/latex/png/get";
+
+    config.filebrowserUploadUrl = "/upfile?type=File&from=ckeditor&overdue=1";
+    config.filebrowserImageUploadUrl = "/upfile?type=image&overdue=1";
+    // config.filebrowserUploadUrl = StaticCkedtor + "/upload/CTYunUpload?ckeditor=true";
+    // config.filebrowserImageUploadUrl = StaticCkedtor + "/upload/CTYunUpload?ckeditor=true";
+
+	// 默认不过滤所有标签
+	config.allowedContent = true;
+	config.entities = false;//不转义字符
+
+    //粘贴过滤器设置为nul
+    // config.pasteFilter= null;
+
+	// 禁用编辑功能
+	// config.readOnly = true;
+};

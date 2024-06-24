@@ -1,0 +1,6 @@
+CKEDITOR.plugins.setLang('cklatex', 'zh-cn', {
+	menu    : '公式',
+	edit 	: '编辑',
+	latex    : 'latex公式编辑by@jianxue',
+	dlgTitle : 'Latex公式编辑'
+});

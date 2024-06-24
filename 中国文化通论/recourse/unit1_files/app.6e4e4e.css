@@ -1,0 +1,37 @@
+var map = {
+	"./statisBg1.png": 1730,
+	"./statisBg10.png": 1731,
+	"./statisBg11.png": 1732,
+	"./statisBg12.png": 1733,
+	"./statisBg13.png": 1734,
+	"./statisBg14.png": 1735,
+	"./statisBg15.png": 1736,
+	"./statisBg2.png": 1737,
+	"./statisBg3.png": 1738,
+	"./statisBg4.png": 1739,
+	"./statisBg5.png": 1740,
+	"./statisBg6.png": 1741,
+	"./statisBg7.png": 1742,
+	"./statisBg8.png": 1743,
+	"./statisBg9.png": 1744
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 1729;

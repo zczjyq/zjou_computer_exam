@@ -1,0 +1,29 @@
+/*
+@ latex css
+*/
+.bar-body{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+}
+.bar-head{
+	height: 30px;
+    line-height: 30px;
+    /*background: #ccc;*/
+}
+.bar-head b{
+	font-size: 14px;
+    line-height: 30px;
+    display: block;
+    float: left;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.bar-head b.current{
+	background: #222;
+	color: #fff;
+}
+.min-tr{
+	width: 130px;
+	display: inline-block;
+}
