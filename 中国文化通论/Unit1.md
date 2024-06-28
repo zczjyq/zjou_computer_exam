@@ -60,12 +60,6 @@
 #### 7. According to the philosophy of Lao Zi, "non-action" means that one should do nothing and passively wait for something to be achieved. ()
 #### 8. The most important ideas in Confucianism are 仁 and 礼. ()
 ## 填空题
-#### 1. During the Spring and Autumn Period and the Warring States Period, China transformed from slavery society to (____)  society. 
-#### 2. (____)  is generally believed to be the author of the classic work Tao Te Ching. 
-#### 3. (____) , Mencius, and Xun Zi are the representatives of the Confucianism in the Pre-Qin period. 
-#### 4. Many of Taoism views are based on Laozi’s philosophy of (____)  and non-action. 
-#### 5. The third stage in the development of Confucianism occurred in the (____)  and Ming dynasties. 
-#### 6. 选词填空（十选七，只填序号） 
 #### 7. 中译英：孟子 (____)  
 #### 8. 中译英：礼治 (____)  
 #### 9. 英译中：Hundred Schools of Thought (____)  
@@ -77,4 +71,3 @@
 #### 3. 句子翻译：亲亲为大。——《中庸》 
 #### 4. 句子翻译：According to Confucius, setting the parents' mind at ease is also a way to show one's love for his parents. 
 #### 5. 句子翻译：Great virtues are like water, because water nourishes everything in the world, but it withdraws into the corner where no one likes to stay. -- Tao Te Ching 
-#### 6. 第一单元学习个人小结（内容包括：我学到了什么，我还没弄懂的是什么，我在自学中的困难/感想/成就等，用中文写） 

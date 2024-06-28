@@ -1,6 +1,9 @@
 # 忽略 .VSCodeCounter 目录
 .VSCodeCounter/
 
+# 忽略 .Mine 目录
+.Mine/
+
 # 不忽略 .gitignore 文件本身
 !.gitignore
 
