@@ -3,22 +3,24 @@
 
 using namespace std;
 
-int n, flag;
+int n;
 int nums[1010];
-vector <int> v;
+bool flag;
+vector<int>v;
 
 void find(int l, int r) {
     if (l > r) return ;
-    int tr = r, tl = l + 1;
-    if (!flag) {
-        while (tl <= r && nums[tl] < nums[l]) tl ++ ;
-        while (tr > l && nums[tr] >= nums[l]) tr -- ;
+    int ml = l + 1, mr = r;
+    if (flag) {
+        while (ml <= r && nums[ml] >= nums[l]) ml ++ ;
+        while (mr > l && nums[mr] < nums[l]) mr -- ;
     } else {
-        while (tl <= r && nums[tl] >= nums[l]) tl ++ ;
-        while (tr > l && nums[tr] < nums[l]) tr -- ;
+        while (ml <= r && nums[ml] < nums[l]) ml ++ ;
+        while (mr > l && nums[mr] >= nums[l]) mr -- ;
     }
-    if (tl - tr != 1) return;
-    find(l + 1, tr); find(tl, r);
+    // cout << ml << ' ' << mr << endl;
+    if (ml - mr != 1) return;
+    find(l + 1, mr), find(ml, r);
     v.push_back(nums[l]);
 }
 
@@ -26,14 +28,19 @@ int main() {
     cin >> n;
     for (int i = 0; i < n; i ++ ) cin >> nums[i];
     find(0, n - 1);
+    // cout << v.size() << endl;
     if (v.size() != n) {
-        flag = 1;
+        flag = !flag;
         v.clear();
         find(0, n - 1);
     }
+    // cout << v.size() << endl;
     if (v.size() != n) cout << "NO";
     else {
-        cout << "YES\n" << v.front();
-        for (int i = 1; i < v.size(); i ++ ) cout << " " << v[i];
+        cout << "YES" << endl;
+        for (int i = 0; i < n; i ++ ) {
+            if (i == 0) cout << v[i];
+            else cout << " " << v[i];
+        }
     }
 }
